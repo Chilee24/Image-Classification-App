@@ -29,7 +29,7 @@ class MLP(nn.Module):
 
 model = MLP(input_dim=28 * 28, output_dim=10)
 model.load_state_dict(
-    torch.load("Image-Classification-App\\tut1-model.pt", map_location="cpu")
+    torch.load("tut1-model.pt", map_location="cpu")
 )
 model.eval()
 
